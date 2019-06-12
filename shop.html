@@ -1,93 +1,260 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Нёрдс</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-</head>
+  <body>
+    <header class="main-header">
+      <a href="#" classs="main-logo" title="Главная страница"
+        ><img
+          scr="img/svg/nerds-logo.svg"
+          width="160"
+          height="65"
+          alt="логотип сайта"
+        />
+      </a>
+      <nav class="main-navigation">
+        <ul class="main-item">
+          <li><a href="studio">Студия</a></li>
+          <li><a href="clients">Клиенты </a></li>
+          <li><a href="shop">Магазин </a></li>
+          <li><a href="contacts">Контакты </a></li>
+        </ul>
+        <ul>
+          <li><a href="basket">Корзина</a></li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+      <form class="market-form">
+        <div class="market-web">
+          <h2>сетка</h2>
+          <ul class="market-web-ul">
+            <li>
+              <input
+                type="radio"
+                id="marketAdaptive"
+                name="web"
+                value="adaptive"
+                checked
+              />
+              <label for="marketAdaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" id="marketFix" name="web" value="fix" />
+              <label for="marketFix">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" id="marketRubber" name="web" value="rubber" />
+              <label for="marketRubber">Резиновая</label>
+            </li>
+          </ul>
+        </div>
+        <div class="market-special">
+          <h2>особенности</h2>
+          <ul class="market-special-ul">
+            <li>
+              <input
+                type="checkbox"
+                id="marketSlider"
+                name="special"
+                value="slider"
+                checked
+              />
+              <label for="marketSlider">Слайдер</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="marketAdvantage"
+                name="special"
+                value="advantage"
+              />
 
-<body>
-  <header class="main-header">
-    <a href="#" classs="main-logo" title="Главная страница"><img scr="img/svg/nerds-logo.svg" width="160" height="65" alt="логотип сайта" />
-
-    </a>
-    <nav class="main-navigation">
-      <ul class="main-item">
-        <li><a href="studio">Студия</a></li>
-        <li><a href="clients">Клиенты </a></li>
-        <li><a href="shop">Магазин </a></li>
-        <li><a href="contacts">Контакты </a></li>
-      </ul>
-      <ul>
-        <li><a href="basket">Корзина</a></li>
-      </ul>
-    </nav>
-    <h1>Магазин готовых шаблонов</h1>
-  </header>
-  <main>
-    <section class="web-style">
-      <ul class="maket-list">
-        <li class="maket-item">
-          <a href="#">
-            <img class="maket-img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"/></a>
-        </li>
-        <li class="maket-item">
-          <a href="#">
-            <img class="maket-img" src="img/img-pink.jpg" width="360" height="576" alt="pink"/></a></li>
-        <li class="maket-item">
-          <a href="#">
-            <img class="maket-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski"/></a></li>
-        <li class="maket-item">
-          <a href="#">
-            <img class="maket-img" src="img/img-mishka.jpg" width="360" height="576" alt="mishka"/></a>
-        </li>
-        <li class="maket-item">
-          <a href="#">
-            <img class="maket-img" src="img/img-aplus.jpg" width="360" height="576" alt="A+"/></a></li>
-        <li class="maket-item">
-          <a href="#">
-            <img class="maket-img" src="img/img-kvast.jpg" width="360" height="576" alt="КВАСТ"/></a>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item"><a href="#">1</a></li>
-        <li class="pagination-item pagination-item-current"><a>2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-next"><a href="#">следующая</a></li>
-      </ul>
-    </section>
-
-
-
-  </main>
-  <footer class="main-footer">
-    <section class="map-section">
-      <div class="studio-location">
-        <h4 class="location-adress">NЁRDS DESIGN STUDIO</h4>
-        <p class="text-gray">
-          191186,Санкт-Петербург,<br />
-          ул.Б. Конюшенная,д. 19/8
+              <label for="marketAdvantage">Блок преимуществ</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="marketNew"
+                name="special"
+                value="new"
+                checked
+              />
+              <label for="marketNew">Новости</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="marketGallery"
+                name="special"
+                value="galerry"
+              />
+              <label for="marketGallery">Галерея</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="marketBasket"
+                name="special"
+                value="basket"
+              />
+              <label for="marketBasket">Корзина</label>
+            </li>
+          </ul>
+        </div>
+        <div class="market-submit">
+          <button type="submit" class="market-submit-button">
+            Показать
+          </button>
+        </div>
+      </form>
+      <section class="web-style">
+        <ul class="maket-list">
+          <li class="maket-item">
+            <a href="#">
+              <img
+                class="maket-img"
+                src="img/img-sedona.jpg"
+                width="360"
+                height="576"
+                alt="Sedona"
+            /></a>
+          </li>
+          <li class="maket-item">
+            <a href="#">
+              <img
+                class="maket-img"
+                src="img/img-pink.jpg"
+                width="360"
+                height="576"
+                alt="pink"
+            /></a>
+          </li>
+          <li class="maket-item">
+            <a href="#">
+              <img
+                class="maket-img"
+                src="img/img-barbershop.jpg"
+                width="360"
+                height="576"
+                alt="Barbershop Borodinski"
+            /></a>
+          </li>
+          <li class="maket-item">
+            <a href="#">
+              <img
+                class="maket-img"
+                src="img/img-mishka.jpg"
+                width="360"
+                height="576"
+                alt="mishka"
+            /></a>
+          </li>
+          <li class="maket-item">
+            <a href="#">
+              <img
+                class="maket-img"
+                src="img/img-aplus.jpg"
+                width="360"
+                height="576"
+                alt="A+"
+            /></a>
+          </li>
+          <li class="maket-item">
+            <a href="#">
+              <img
+                class="maket-img"
+                src="img/img-kvast.jpg"
+                width="360"
+                height="576"
+                alt="КВАСТ"
+            /></a>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-next"><a href="#">следующая</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="map-section">
+        <div class="studio-location">
+          <h4 class="location-adress">NЁRDS DESIGN STUDIO</h4>
+          <p class="text-gray">
+            191186,Санкт-Петербург,<br />
+            ул.Б. Конюшенная,д. 19/8
+          </p>
+          <p class="text-gray">тел. +7(812)275-75-75</p>
+          <span>напишите нам</span>
+        </div>
+      </section>
+      <section class="social-list">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </section>
+      <section class="social-friends">
+        <h3>Давайте дружить,это выгодно!</h3>
+        <p>
+          Скидка 10% для друзей из социальных сетей.
         </p>
-        <p class="text-gray">тел. +7(812)275-75-75</p>
-        <span>напишите нам</span>
-
-      </div>
-
-    </section>
-    <section class="social-list">
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-    </section>
-    <section class="social-friends">
-      <h3>Давайте дружить,это выгодно!</h3>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
-    </section>
-  </footer>
-</body>
-
+      </section>
+      <section class="info-form visually-hidden">
+        <form>
+          <h2>
+            Напишите нам
+          </h2>
+          <div>
+            <span>
+              X
+            </span>
+          </div>
+          <div>
+            <label for="infoName">Ваше имя:</label>
+            <input
+              type="text"
+              id="infoName"
+              name="name"
+              value=""
+              placeholder="Имя Фамилия"
+            />
+          </div>
+          <div>
+            <label for="infoEmail">Ваш e-mail:</label>
+            <input
+              type="email"
+              id="infoEmail"
+              name="email"
+              value=""
+              placeholder="email@examplae.com"
+            />
+          </div>
+          <div>
+            <label for="infoText">Текст письма:</label>
+            <textarea
+              type="text"
+              id="infoText"
+              name="text"
+              placeholder="В свободной форме"
+            >
+            </textarea>
+          </div>
+          <div class="info-submit">
+            <button type="submit" class="info-submit-button">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </section>
+    </footer>
+  </body>
 </html>
